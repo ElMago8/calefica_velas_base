@@ -46,6 +46,6 @@ El SDK de Supabase está fijado en `package-lock.json` y su bundle oficial se in
 
 `imports/`, `reports/`, `credentials/`, `local-backups/`, archivos `.env*` y notas locales están excluidos de Git. Los archivos de la importación completada se conservan únicamente como respaldo local comprimido en `local-backups/`; no se publican. Los SQL de `supabase/manual/` son plantillas; las copias personales completadas permanecen en `credentials/`.
 
-Esta versión se mantiene en https://github.com/EdgarA1989/calefica_velas2.0. El repositorio anterior `calefica_velas` permanece como backup sin cambios; también se conserva su historial en esta copia. El código de GitHub no sustituye un backup de la base PostgreSQL ni de las imágenes Storage.
+Esta versión se mantiene en https://github.com/ElMago8/calefica_velas_base. Los repositorios anteriores `EdgarA1989/calefica_velas2.0` y `EdgarA1989/calefica_velas` se conservan como referencias; también se conserva su historial en esta copia. El código de GitHub no sustituye un backup de la base PostgreSQL ni de las imágenes Storage.
 
 La migración desde Google Sheets está completada. Sus scripts, pantalla de importación, pruebas específicas, guías históricas y fotos de ejemplo se retiraron de la versión actual; pueden recuperarse del historial de Git. La tienda consulta Supabase y el panel administra allí los productos y las imágenes.
