@@ -37,6 +37,10 @@ La suite usa PostgreSQL en memoria y servicios simulados. Las pruebas de navegad
 
 No hay build ni backend Node/Express. Para Hostinger, publicar solo `index.html`, `admin/`, `css/`, `js/` y las imágenes necesarias de `assets/`. No copiar el repositorio completo a `public_html`: SQL, tests, herramientas, exports, archivos de entorno y `.git` no pertenecen al sitio publicado. Las secciones administrativas usan directorios HTML, sin router SPA.
 
+Hostinger debe conectar la rama **`deploy`** del repositorio, con destino `public_html`. La rama `main` conserva el código de desarrollo. GitHub Actions ejecuta las pruebas y la revisión de secretos cuando se actualiza `main`; luego genera `deploy` con una lista permitida de archivos públicos y la sube. Activar el despliegue automático de esa rama en Hostinger. La primera publicación no tiene como padre a `main`, para mantener separado su historial.
+
+Para generar la rama manualmente desde los archivos ya guardados en un commit: `node scripts/prepare-deploy.cjs`, seguido de `git push origin deploy`. No editar `deploy` a mano: se regenera desde `main`. La selección excluye configuraciones locales, ejemplos, SQL, documentación y herramientas. Las pruebas de navegador requieren Edge; en el runner Linux se omiten, y deben comprobarse localmente cuando se cambie la interfaz.
+
 El SDK de Supabase está fijado en `package-lock.json` y su bundle oficial se incluye en `js/vendor/`, con licencia. Para regenerarlo: `npm.cmd run vendor:supabase`.
 
 ## Documentación
