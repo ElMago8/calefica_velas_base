@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velas de soja artesanales con aromas delicados, diseño natural y detalles boutique para regalar o crear momentos especiales.">
+  <title>Calefica | Velas de soja artesanales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=edfdef3">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="navbar" aria-label="Navegacion principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <div class="brand-logo">
+          <img class="brand-logo__icon" src="assets/img/calefica_logo.png" alt="">
+          <div class="brand-logo__text">
+            <p class="brand-logo__name">Calef<span class="brand-logo__candle" role="img" aria-label="i"></span>ca</p>
+            <div class="brand-logo__divider"><span></span><i></i><span></span></div>
+            <p class="brand-logo__subtitle">VELAS DE SOJA</p>
+            <p class="brand-logo__tagline">Naturalmente simple</p>
+          </div>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" id="nav-panel">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#contacto">Souvenir</a>
+        <a href="#contacto">Contacto</a>
+        <a class="nav-cta" href="#catalogo">Ver catalogo</a>
+      </div>
+
+      <button class="cart-button" id="cart-button" type="button" aria-label="Ver mi pedido">
+        <svg class="cart-button__icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-button__label">Pedido</span>
+        <span class="cart-counter" id="cart-counter" aria-live="polite" hidden>0</span>
+      </button>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+        <span class="theme-candles" aria-hidden="true">
+          <span class="theme-candle theme-candle--big">
+            <span class="theme-wick"></span>
+            <span class="theme-eyes"><span></span><span></span></span>
+            <span class="theme-mouth"></span>
+            <span class="theme-smoke theme-smoke--one"></span>
+            <span class="theme-smoke theme-smoke--two"></span>
+          </span>
+          <span class="theme-candle theme-candle--small">
+            <span class="theme-light-wave"></span>
+            <span class="theme-flame"></span>
+            <span class="theme-wick"></span>
+            <span class="theme-eyes"><span></span><span></span></span>
+          </span>
+        </span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-reveal">
+      <div class="hero__media" aria-hidden="true">
+        <div class="hero-photo hero-photo--main"></div>
+        <div class="hero-photo hero-photo--small"></div>
+        <div class="floating-note">
+          <strong>Cera de soja natural</strong>
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow">Velas de soja artesanales</p>
+        <h1>Momentos calidos, aromas suaves y luz para tu hogar</h1>
+        <p class="hero-copy">Aromas delicados, diseño natural y calidez para cada rincon. Piezas creadas con cuidado para regalar, decorar y disfrutar.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#catalogo">Ver catalogo</a>
+          <a class="btn btn--ghost" id="hero-whatsapp" href="#">Contactar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section-pad section-reveal" id="historia">
+      <div class="section-heading section-heading--left">
+        <p class="eyebrow">Nuestra historia</p>
+        <h2>Un emprendimiento artesanal con alma de hogar</h2>
+      </div>
+      <div class="story-grid">
+        <article class="story-card">
+          <p>Calefica nace del deseo de crear objetos simples, lindos y sensoriales. Cada vela se elabora en pequenas tandas con cera de soja natural, fragancias seleccionadas y envases cuidados para acompanar rituales cotidianos.</p>
+          <p>Nos inspiran las tardes tranquilas, las flores secas, los tonos nude y esos detalles que convierten un espacio en refugio.</p>
+          <div class="story-values">
+            <span>Natural</span>
+            <span>Artesanal</span>
+            <span>Delicado</span>
+          </div>
+        </article>
+        <div class="story-visual" aria-hidden="true">
+          <div class="story-visual__image"></div>
+          <div class="story-visual__label">Fragancias suaves y envases pensados para regalar</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog section-pad section-reveal" id="catalogo">
+      <div class="section-heading">
+        <p class="eyebrow">Catalogo boutique</p>
+        <h2>Elegí tu vela favorita</h2>
+        <p>Selecciona una categoria, abrí el detalle del producto y elegí la cantidad para comprar o consultar.</p>
+      </div>
+
+      <div class="catalog-layout">
+        <aside class="category-menu" aria-label="Categorias de productos">
+          <h3>Categorias</h3>
+          <div class="category-list" id="category-list"></div>
+        </aside>
+
+        <div class="catalog-showcase">
+          <div class="carousel-head">
+            <div>
+              <span class="catalog-count" id="catalog-count">0 productos</span>
+              <h3 id="catalog-title">Todos</h3>
+            </div>
+            <div class="carousel-controls">
+              <button class="icon-btn" id="prev-product" type="button" aria-label="Producto anterior">‹</button>
+              <button class="icon-btn" id="next-product" type="button" aria-label="Producto siguiente">›</button>
+            </div>
+          </div>
+
+          <div class="products-track" id="products-track" aria-live="polite"></div>
+          <div class="mobile-catalog-controls" id="mobile-catalog-controls" hidden>
+            <button class="mobile-catalog-btn" id="mobile-catalog-prev" type="button" aria-label="Ver productos anteriores">↑</button>
+            <button class="mobile-catalog-btn" id="mobile-catalog-next" type="button" aria-label="Ver mas productos">↓</button>
+          </div>
+          <div class="carousel-dots" id="carousel-dots" aria-label="Indicadores de catalogo"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad section-reveal" id="contacto">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <p class="eyebrow">Hablemos</p>
+          <h2>Pedidos personalizados, regalos, souvenirs para tu evento y aromas disponibles</h2>
+          <p>Escribinos para consultar stock, coordinar envios, armar un box especial, consultar presupuesto para eventos o elegir una fragancia para tu espacio.</p>
+          <div class="contact-actions">
+            <a class="btn btn--primary" id="contact-whatsapp" href="#">WhatsApp</a>
+            <a class="btn btn--soft" id="instagram-link" href="#" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="btn btn--soft" id="email-link" href="#">Email</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label>
+            Nombre
+            <input type="text" id="contact-name" placeholder="Tu nombre" required>
+          </label>
+          <label>
+            Mensaje
+            <textarea id="contact-message" rows="4" placeholder="Quiero consultar por aromas, regalos o pedidos personalizados..." required></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Enviar consulta</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button class="cart-floating" id="cart-floating" type="button" aria-label="Ver mi pedido">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+    <span class="cart-floating__counter" id="cart-floating-counter" aria-live="polite" hidden>0</span>
+  </button>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <div class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Tu pedido" aria-hidden="true">
+    <div class="cart-header">
+      <h2 class="cart-title">Mi pedido</h2>
+      <button class="cart-close" id="cart-close" type="button" aria-label="Cerrar pedido">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total estimado</span>
+        <strong id="cart-total-value">$ 0</strong>
+      </div>
+      <div class="cart-footer__actions">
+        <button class="cart-clear" id="cart-clear" type="button" hidden>Vaciar pedido</button>
+        <button class="btn btn--primary cart-checkout" id="cart-checkout" type="button" disabled>Enviar pedido por WhatsApp</button>
+        <p class="cart-checkout-status" id="cart-checkout-status" role="status"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-modal" id="product-modal" aria-hidden="true">
+    <button class="product-modal__backdrop" type="button" data-close-product-modal aria-label="Cerrar detalle de producto"></button>
+    <div class="product-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+      <button class="product-modal__close" type="button" data-close-product-modal aria-label="Cerrar">×</button>
+      <div class="product-modal__image" id="modal-product-image" aria-hidden="true"></div>
+      <div class="product-modal__content">
+        <h3 id="modal-product-title"></h3>
+        <p class="product-modal__description" id="modal-product-description"></p>
+        <fieldset class="aroma-selector" id="modal-product-aromas" hidden>
+          <legend>Aroma</legend>
+          <div class="aroma-selector__options" id="modal-aroma-options"></div>
+        </fieldset>
+        <div class="product-modal__meta">
+          <span class="price" id="modal-product-price"></span>
+        </div>
+        <div class="product-modal__quantity">
+          <span class="product-modal__quantity-label">Cantidad</span>
+          <div class="quantity-control">
+            <button class="qty-btn" type="button" data-modal-qty="decrease" aria-label="Restar cantidad">-</button>
+            <span class="quantity-value" id="modal-product-quantity">1</span>
+            <button class="qty-btn" type="button" data-modal-qty="increase" aria-label="Sumar cantidad">+</button>
+          </div>
+        </div>
+        <div class="product-modal__actions">
+          <button class="btn btn--primary" id="modal-product-buy" type="button">Comprar</button>
+          <button class="btn btn--soft" id="modal-product-consult" type="button">Consultar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#inicio">
+          <div class="brand-logo brand-logo--footer">
+            <img class="brand-logo__icon" src="assets/img/calefica_logo.png" alt="">
+            <div class="brand-logo__text">
+              <p class="brand-logo__name">Calef<span class="brand-logo__candle" role="img" aria-label="i"></span>ca</p>
+              <div class="brand-logo__divider"><span></span><i></i><span></span></div>
+              <p class="brand-logo__subtitle">VELAS DE SOJA</p>
+              <p class="brand-logo__tagline">Naturalmente simple</p>
+            </div>
+          </div>
+        </a>
+        <p>Velas de soja artesanales, hechas con dedicacion y aromas pensados para momentos especiales.</p>
+      </div>
+      <div>
+        <h3>Explorar</h3>
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#contacto">Souvenir</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div>
+        <h3>Informacion</h3>
+        <p>Medios de pago externos</p>
+        <p>Envios y retiros a coordinar</p>
+        <p>Hecho artesanalmente</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Calefica</span>
+      <span>Velas de soja artesanales</span>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/vendor/supabase.js"></script>
+  <script src="js/lib/supabaseClient.js"></script>
+  <script src="js/services/productsService.js?v=supabase-cleanup-2"></script>
+  <script src="js/aromas.js"></script>
+  <script src="js/main.js?v=supabase-cleanup-2"></script>
+</body>
+</html>
